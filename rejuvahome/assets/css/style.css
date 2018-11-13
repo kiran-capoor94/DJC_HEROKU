@@ -8853,4 +8853,5 @@ img#logo-footer {
 
 .social-top-icons a:hover{
     background-color: #512d95!important;
+    border: 1px solid white;
 }
