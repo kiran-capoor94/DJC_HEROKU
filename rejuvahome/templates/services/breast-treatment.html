@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Rejuva Aestherica | Breast {% endblock title %}
+
+{% block content %}
+<!--=================================
+page-title-->
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(https://d1ue9nf4jqhjr9.cloudfront.net/static/images/page-title-1.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Breast Treatment</h1>
+          <p>rejuva Aestheica helps you look good</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+page-title -->
+<section class="theme-bg page-section">
+    <div class="container">
+      <div class="row">
+        <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+          {% autoescape on %}
+  
+          {% with "https://rejuvaaesthetica.com/" as host %}
+          {% with "Share to" as share_txt %}
+  
+          <ul class="social-section-list center">
+            <li class="social-top-icons text-white">
+              {% with "facebook" as service %}
+              <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+                title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "twitter" as service %}
+              <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+                style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              {% endwith%}
+            </li>
+            <li class="social-top-icons text-white">
+              <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-pinterest-p text-white"></i> </a>
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "linkedin" as service %}
+              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+          </ul>
+          {% endwith %}
+          {% endwith %}
+  
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--=================================
+ service-->
+
+<section class="blog blog-grid-3-column white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Be Perfect </h6>
+          <h2 class="title-effect">Breast Treatments</h2>
+          <p>We'll do everything we can!</p>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/replacing-breast-implant-west-palm-beach.png' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a>Breast enlargement Surgery</a>
+            </div>
+            <div class="entry-content">
+              <p>Breast enlargement Surgery is a procedure which helps in reshaping and enhancing your breast size.
+                Many women find that by choosing to have breast augmentation surgery their self-esteem and confidence
+                can improve.
+                Breast enlargement is now one of the most popular cosmetic surgery procedures.
+
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/BreastLift.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Breast Lift</a>
+            </div>
+            <div class="entry-content">
+              <p>A woman’s breasts often change over time, losing their youthful shape and firmness.
+                A breast lift surgery can rejuvenate your figure with a breast profile that is youthful and uplifted.
+                Breast lift surgery does not significantly change the size or round out the upper part of your breast.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/BreastReduction1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#"> Breast Reduction </a>
+            </div>
+            <div class="entry-content">
+              <p>Breast Reduction surgery is a procedure to reduce the size of excessively large Breasts
+                Excessively large breast may cause back pain, neck pain, grooves in shoulders from bra strap.
+                Breast Reduction surgery alleviate the discomfort associated with overly large breasts.
+                In a breast reduction, the surgeon removes tissue and skin to make breasts smaller and perkier.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/MaleBreastSurgery.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Male Breast Surgery</a>
+            </div>
+            <div class="entry-content">
+              <p>The male breast reduction procedure reduces abnormally-enlarged, female-like breasts in men through
+                the procedure of liposuction and/or cutting out excess glandular tissue. The results are permanent,
+                although weight gain or use of certain drugs may cause a recurrent condition.
+                An incision is made in the areola, the dark area surrounding the nipple, or in the armpit. Fat and
+                glandular tissues are removed to create a chest that is flatter and firmer, contributing to a more
+                masculine contour. Liposuction may be performed in conjunction with male breast reduction.
+              </p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/NippleCorrection.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Nipple Correction</a>
+            </div>
+            <div class="entry-content">
+              <p>Areola Correction Surgery is a fast and simple method that can help you if you are troubled with the
+                size of your areola (the dark coloured or pink zone around the nipple). As you age, the areola gets
+                bigger and darker making its size disproportionate to the breast size. Other contributing factors are
+                childbirth and breastfeeding. Now reducing the areola and getting nipple correction done to the desired
+                size is possible via simple procedures. It is done via the latest techniques under local anaesthesia.
+                It is a walk in, walk out kind of a procedure.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/NippleCorrection.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Breast Assymetry Correction</a>
+            </div>
+            <div class="entry-content">
+              <p>This is a very common concern among female adolescents-even adult women! But it is quite common for
+                each breast to be slightly different in size, a condition called asymmetry. Breast asymmetry is defined
+                as a difference of form, position or volume of the breast and it affects more than half of all women,
+                so your daughter shouldn't feel alone. In fact, one study of 100 women who wanted breast augmentation
+                with implants found that 88 percent had natural asymmetries.
+
+                Dr Arth Shah is particularly renowned for his extensive surgical experience to correct uneven,
+                asymmetric breasts.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+  </div>
+</section>
+
+<!--=================================
+ service-->
+
+
+<!--=================================
+ like what -->
+ {% include "base/snippets/like-what.html" %}
+
+<!--=================================
+ like what  -->
+
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Advantages of Rejuva Aesthetica </h6>
+          <h2 class="title-effect">Total Care System</h2>
+          <p>We are dedicated to providing you with the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>01<span class="theme-color">.</span></h1>
+          <h3>Innovation</h3>
+          <p> Patented Technology with Patented Micro and Single use instruments </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>02<span class="theme-color">.</span></h1>
+          <h3>Education </h3>
+          <p>We feel how you feel so many people from all around the world have undergone various procedures with
+            Rejuva Aesthetica</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="text-left">
+          <h1>03<span class="theme-color">.</span></h1>
+          <h3>Transparency</h3>
+          <p>No Stitches, No Pain, No Scars, No Marks, No Scalpels, No Bleeding, Single Session Sitting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+{% include "contact/action-box.html" %}
+{% endblock content %}

@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Rejuva Aestherica | Laser {% endblock title %}
+
+{% block content %}
+<!--=================================
+page-title-->
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(https://d1ue9nf4jqhjr9.cloudfront.net/static/images/page-title-4.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Laser Treatment</h1>
+          <p>rejuva Aestheica helps you look good</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+page-title -->
+<section class="theme-bg page-section">
+    <div class="container">
+      <div class="row">
+        <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+          {% autoescape on %}
+  
+          {% with "https://rejuvaaesthetica.com/" as host %}
+          {% with "Share to" as share_txt %}
+  
+          <ul class="social-section-list center">
+            <li class="social-top-icons text-white">
+              {% with "facebook" as service %}
+              <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+                title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "twitter" as service %}
+              <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+                style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              {% endwith%}
+            </li>
+            <li class="social-top-icons text-white">
+              <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-pinterest-p text-white"></i> </a>
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "linkedin" as service %}
+              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+          </ul>
+          {% endwith %}
+          {% endwith %}
+  
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> What we do </h6>
+          <h2 class="title-effect">Laser Treatments</h2>
+          <p>We'll do everything we can to make you look beautiful!</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ============================================ -->
+    <div class="service-3">
+      <div class="row pb-50">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-md-push-6">
+          <img class="img-responsive full-width" src="{% static 'images/FUT.jpg' %}" alt="Rejuva Aesthetica FUT Laser transplant clinic ahemdabad">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 sm-mt-30 sm-mb-30 col-md-pull-6">
+          <div class="service-blog text-right">
+            <h3 class="theme-color">Laser Hair Removal</h3>
+            <p>Laser Hair Removal is a Laser technique, that uses beams of highly concentrated light to penetrate the
+              hair follicles.
+              Lasers are useful for removing unwanted hair from the face, leg, arm, underarm, and bikini line.
+              You should also avoid sun exposure for six weeks before and after treatment. </p>
+            <b>01</b>
+            <!-- <ul class="list list-unstyled">
+              <li> Follicle Unit Transplant </li>
+              <li> Follicle Unit Extraction</li>
+              <li> Neo Graft Transplant</li>
+            </ul> -->
+          </div>
+        </div>
+
+      </div>
+      <!-- ============================================ -->
+      <div class="row pb-50">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img class="img-responsive full-width" src="{% static 'images/tatto.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 sm-mt-30 sm-mb-30">
+          <div class="service-blog left text-left">
+            <h3 class="theme-color">Laser Tattoo Removal</h3>
+            <p>There is good news for those who have an unwanted body design. Newer laser tattoo removal techniques can
+              eliminate your tattoo with minimal side effects. Lasers remove tattoos by breaking up the pigment colors
+              of the tattoo with a high-intensity light beam.
+              <br><br>
+              Laser treatment is often safer than many traditional methods such as excision, dermabrasion because
+              of its unique ability to selectively treat pigment involved in the tattoo.
+              In many cases, certain colors may be more effectively removed than others. It is known that blue/black
+              tattoos respond particularly well to laser treatment. </p>
+            <b>02</b>
+            <!-- <ul class="list list-unstyled">
+              <li>Vampire Therapy </li>
+              <li> Meso Therapy</li>
+              <li> Female Pattern Baldness </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <!-- ============================================ -->
+      <div class="service-3">
+        <div class="row pb-50">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-md-push-6">
+            <img class="img-responsive full-width" src="{% static 'images/laser skin resurfacing.jpg' %}" alt="Rejuva Aesthetica FUT Laser transplant clinic ahemdabad">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 sm-mt-30 sm-mb-30 col-md-pull-6">
+            <div class="service-blog text-right">
+              <h3 class="theme-color">Laser Skin Resurfacing</h3>
+              <p>LFractional or Pixilated carbon dioxide (CO2) Laser Skin Resurfacing treatment is a
+                non-invasive treatment and one of the latest technological advancements done for skin
+                rejuvenation.
+                <br><br>
+                It is also called the anti-aging breakthrough of the 21st Century!
+                <br><br>
+                It gives the most dramatic results for severely scarred facial skin. Fractional CO2 laser
+                treatment is excellent for the treatment of deep wrinkles, severe textured changes due
+                to the sun, acne, acne scars, surgical scars etc. 
+                <br><br>
+                CO2 has the largest wavelength and
+                can be applied to darker skin types also with appropriate settings.</p>
+              <b>03</b>
+              <!-- <ul class="list list-unstyled">
+                <li> Follicle Unit Transplant </li>
+                <li> Follicle Unit Extraction</li>
+                <li> Neo Graft Transplant</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <!-- ============================================ -->
+      </div>
+    </div>
+</section>
+
+<!--=================================
+ service-->
+
+
+<!--=================================
+ like what -->
+ {% include "base/snippets/like-what.html" %}
+
+<!--=================================
+ like what  -->
+
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Advantages of Rejuva Aesthetica </h6>
+          <h2 class="title-effect">Total Care System</h2>
+          <p>We are dedicated to providing you with the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>01<span class="theme-color">.</span></h1>
+          <h3>Innovation</h3>
+          <p> Patented Technology with Patented Micro and Single use instruments </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>02<span class="theme-color">.</span></h1>
+          <h3>Education </h3>
+          <p>We feel how you feel so many people from all around the world have undergone various procedures with
+            Rejuva Aesthetica</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="text-left">
+          <h1>03<span class="theme-color">.</span></h1>
+          <h3>Transparency</h3>
+          <p>No Stitches, No Pain, No Scars, No Marks, No Scalpels, No Bleeding, Single Session Sitting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+ {% include "contact/action-box.html" %}
+{% endblock content %}

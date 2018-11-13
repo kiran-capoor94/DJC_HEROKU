@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Rejuva Aestherica | Body {% endblock title %}
+
+{% block content %}
+<!--=================================
+page-title-->
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(https://d1ue9nf4jqhjr9.cloudfront.net/static/images/page-title-1.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Body Treatment</h1>
+          <p>rejuva Aestheica helps you look good</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+page-title -->
+<section class="theme-bg page-section">
+  <div class="container">
+    <div class="row">
+      <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+        {% autoescape on %}
+
+        {% with "https://rejuvaaesthetica.com/" as host %}
+        {% with "Share to" as share_txt %}
+
+        <ul class="social-section-list center">
+          <li class="social-top-icons text-white">
+            {% with "facebook" as service %}
+            <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+              title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            {% endwith %}
+          </li>
+          <li class="social-top-icons text-white">
+            {% with "twitter" as service %}
+            <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+              style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+            {% endwith%}
+          </li>
+          <li class="social-top-icons text-white">
+            <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+              target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-pinterest-p text-white"></i> </a>
+          </li>
+          <li class="social-top-icons text-white">
+            {% with "linkedin" as service %}
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+              target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            {% endwith %}
+          </li>
+        </ul>
+        {% endwith %}
+        {% endwith %}
+
+        {% endautoescape %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+
+<section class="blog blog-grid-3-column white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Be Perfect </h6>
+          <h2 class="title-effect">Body Treatments</h2>
+          <p>We'll do everything we can!</p>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/liposuction1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a>Liposuction</a>
+            </div>
+            <div class="entry-content">
+              <p>Liposuction, sometimes referred to as "lipo" by patients, slims and reshapes specific areas of the
+                body by removing excess fat deposits and improving your body contours and proportion.
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/TummyTuck.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Tummy tuck</a>
+            </div>
+            <div class="entry-content">
+              <p>Tummy tuck surgery, also known as abdominoplasty, removes excess fat and skin and, in most cases,
+                restores weakened or separated muscles creating an abdominal profile that is smoother and firmer.
+
+                A flat and well-toned abdomen is something many of us strive for through exercise and weight control.
+                Sometimes these methods cannot achieve our goals.
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/six-pack-abs.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#"> Six Pack Abs </a>
+            </div>
+            <div class="entry-content">
+              <p>Abdominal etching takes liposuction to the next level as it involves an advance level of detailing and
+                distinction to the abdomen that gets you Six-Packs. It is a form of liposculpting that removes excess
+                fat between the abdominal muscles, creating indentations that resemble those seen on a six-pack or
+                washboard stomach. With AB etching, your stomach can appear tighter, firmer and more muscular.
+                Many men strive for those ever-desirable six-packs and eight pack abs these days.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/mommy-makeover1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Mommy Makeover</a>
+            </div>
+            <div class="entry-content">
+              <p>A Mommy Makeover is a completely individualized set of procedures that are used to describe the
+                combination of cosmetic procedures performed on a woman’s body to get the before-pregnancy appearance/
+                pre-baby body. These cosmetic procedures may include Liposuction, Breast Augmentation, Tummy Tuck,
+                Breast lift, Face, Pigmentation or Genital Rejuvenation as per the individual need of the patient.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/ArmLift1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Arm Lift</a>
+            </div>
+            <div class="entry-content">
+              <p>Excess skin on the underside of the upper arms and on the inside of the upper legs is often the result
+                of a pregnancy, an extreme weight loss or aging. An arm lift, also known as brachioplasty, and
+                respectively a thigh lift can be the solution for a loss of skin elasticity or excess skin. </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/ThighLift1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Thigh Lift</a>
+            </div>
+            <div class="entry-content">
+              <p>A thigh lift is a procedure that involves the removal of excess skin and fat from either the inner or
+                outer thighs. This is often desirable after substantial or bariatric weight loss or in individuals for
+                whom dieting and exercise have failed to reduce excess tissue in their upper thighs. Liposuction may be
+                used as an adjunct to the recontouring of the inner thigh. If you are committed to maintaining a
+                healthy lifestyle and a moderate weight, a thigh lift can help you regain the youthful thigh contours
+                you desire.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Gynaecomastia.png' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Gynaecomastia</a>
+            </div>
+            <div class="entry-content">
+              <p>Many men suffer from a condition known as gynaecomastia, or ‘feminisation’ of the male breast. In this
+                condition extra fat and breast tissue accumulate in the chest area, giving the male an unnatural
+                feminine fullness to their chest. Gynaecomastia can occur secondarily as a result of several medical
+                conditions or certain drugs. Alternatively, it may occur without any predisposing factor. Either way,
+                it is a condition that can be very embarrassing for many men.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================ -->
+  </div>
+</section>
+
+<!--=================================
+ service-->
+
+
+<!--=================================
+ like what -->
+ {% include "base/snippets/like-what.html" %}
+
+<!--=================================
+ like what  -->
+
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Advantages of Rejuva Aesthetica </h6>
+          <h2 class="title-effect">Total Care System</h2>
+          <p>We are dedicated to providing you with the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>01<span class="theme-color">.</span></h1>
+          <h3>Innovation</h3>
+          <p> Patented Technology with Patented Micro and Single use instruments </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>02<span class="theme-color">.</span></h1>
+          <h3>Education </h3>
+          <p>We feel how you feel so many people from all around the world have undergone various procedures with
+            Rejuva Aesthetica</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="text-left">
+          <h1>03<span class="theme-color">.</span></h1>
+          <h3>Transparency</h3>
+          <p>No Stitches, No Pain, No Scars, No Marks, No Scalpels, No Bleeding, Single Session Sitting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+{% include "contact/action-box.html" %}
+{% endblock content %}

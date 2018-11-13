@@ -1,0 +1,433 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Rejuva Aestherica | Face {% endblock title %}
+
+{% block content %}
+<!--=================================
+page-title-->
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(https://d1ue9nf4jqhjr9.cloudfront.net/static/images/page-title-1.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Face Treatment</h1>
+          <p>rejuva Aestheica helps you look good</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+page-title -->
+<section class="theme-bg page-section">
+    <div class="container">
+      <div class="row">
+        <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+          {% autoescape on %}
+  
+          {% with "https://rejuvaaesthetica.com/" as host %}
+          {% with "Share to" as share_txt %}
+  
+          <ul class="social-section-list center">
+            <li class="social-top-icons text-white">
+              {% with "facebook" as service %}
+              <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+                title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "twitter" as service %}
+              <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+                style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              {% endwith%}
+            </li>
+            <li class="social-top-icons text-white">
+              <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-pinterest-p text-white"></i> </a>
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "linkedin" as service %}
+              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+          </ul>
+          {% endwith %}
+          {% endwith %}
+  
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--=================================
+ service-->
+
+<section class="blog blog-grid-3-column white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Be Perfect </h6>
+          <h2 class="title-effect">Face Treatments</h2>
+          <p>We'll do everything we can!</p>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/FaceLift1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a>Face Lift / Neck Lift</a>
+            </div>
+            <div class="entry-content">
+              <p>The face usually reveals the first visible signs of Aging. Both Gravity & Sun exposure result in
+                facial features of Aging. Formation of skin wrinkles, loss of facial volume, drooping of jaw lines are
+                all signs of Facial Aging. But aging of skin does not necessarily reflect your body spirit & energy
+                level, which makes you conscious that you don’t look as you feel. Facelift is a surgical procedure
+                which makes you look & feel younger. It takes back the clock by 5-7yrs. In a facelift procedure the
+                excess skin of face & neck is excised, underlying muscle & tissues are tightened to give a smooth &
+                cheerful look. </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Rhinoplasty.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Rhinoplasty</a>
+            </div>
+            <div class="entry-content">
+              <p>In Rhinoplasty, the nose is reshaped so that it looks natural and blends harmoniously with the rest of
+                the face.
+                Rhinoplasty (Nose Job) can provide significant enhancement to the appearance of the nose for both men
+                and women.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Blepharoplasty1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#"> Blepharoplasty </a>
+            </div>
+            <div class="entry-content">
+              <p>No matter how young you may feel on the inside, drooping eyelids and eye bags can put years on you.
+                Blepharoplasty surgery (blepharoplasty) removes the drooping skin of upper eyelids, eliminates eye bags
+                and tightens the lower eyelid skin.
+                Blepharoplasty surgery can make people look younger and less tired.
+                Fortunately, significant complications from Blepharoplasty are infrequent.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Otoplasty.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Otoplasty</a>
+            </div>
+            <div class="entry-content">
+              <p>Otoplasty is a plastic surgical procedure performed to change the shape, position or size of the ears.
+                This procedure is also known as cosmetic ear surgery. Therefore, if you or your child have protruding
+                ears and are self-conscious about the shape or size of the ears, Otoplasty at Rejuva Aesthetica
+                Advanced Aesthetic Surgery Clinic is the right solution for you. This surgery would correct all the
+                abnormalities in the structure of the ears. The aim of the surgery is to help the person feel more
+                comfortable and confident with how their ears look.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/LipReduction.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Lip Augmentation</a>
+            </div>
+            <div class="entry-content">
+              <p>Lip Reduction surgery is a safe, common procedure that has been around since long. Lip reduction
+                surgery improves daily functions such as; eating, talking, dental hygiene, and more.
+                Improved confidence and self-esteem is also a consequence from the reduction of overly large,
+                protruding lips. Possessing lips that are in sync with the rest of your facial traits creates a
+                satisfying harmony and facial balance.
+                This procedure is also called cheiloplasty.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/BuccalFatRemoval1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Buccal Fat Reduction</a>
+            </div>
+            <div class="entry-content">
+              <p>Buccal fat pad, also known as Bichat’s fat pad, is the prominent fat mass in the cheek that can make
+                us appear over-weight. Sometimes, this chubby cheek does not dissipate and stays till the adulthood
+                also. In most cases, due to genetics, Buccal fat might not get reduced even with extreme weight loss.
+                Buccal fat pad reduction is an elegant cosmetic surgery, that could be performed to slim your cheeks
+                and face to give it a more firm and improved contour look.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/BrowLift11.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Brow Lift</a>
+            </div>
+            <div class="entry-content">
+              <p>A brow lift surgery, commonly known as a forehead lift, is a Cosmetic Surgery procedure that lifts the
+                face above the eyes to give a refreshed and young appearance. Soft tissues in the brow tends to deflate
+                with age. This surgery removes the excess sagging and re-positions the underlying tissues and muscles.
+                Brow lift surgery involves a combination of upper lid blepharoplasty (Eye lid surgery), lower eye bag
+                removal and brow re-positioning of tissues which are common cosmetic surgery methods to re-shape and
+                rejuvenate the upper part of the face.</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/EarLobeRepair11.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Earlobe Repair</a>
+            </div>
+            <div class="entry-content">
+              <p>The earlobes are the soft lower part of the ears that is made up with a small amount of soft fatty
+                connective tissues. Earlobes play a very important role in the physical appearance of men and women and
+                also a popular area to wear jewelry.
+                Earlobe repair surgery is a quick and effective reconstructive cosmetic surgery procedure performed to
+                correct the appearance of the earlobes that have been stretched by ear piercing, trauma, or due to any
+                other reasons.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/DimpleCreation1.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Dimple creation</a>
+            </div>
+            <div class="entry-content">
+              <p>Quae laboriosam sunt hic perspiciatis, asperiores mollitia excepturi voluptatibus sequi nostrum ipsam
+                veniam omnis nihil! A ea maiores corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur, assumenda provident
+                lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/ChinImplant.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Chin Implants</a>
+            </div>
+            <div class="entry-content">
+              <p>Chin Implant, also known as mentoplasty, is a surgical procedure to reshape the chin either by
+                enhancement with an implant or reduction surgery on the bone.
+                Many times a plastic surgeon may recommend chin surgery to a patient having nose surgery in order to
+                achieve facial proportion, as the size of the chin may magnify or minimize the perceived size of the
+                nose.
+                Chin surgery helps provide a harmonious balance to your facial features so that you feel better about
+                the way you look.
+                Chin augmentation is often combined with liposuction to remove fat from under the chin and the neck.</p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Dark Circles.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Dark Circle Removal</a>
+            </div>
+            <div class="entry-content">
+              <p>Broken vessels under the eyelid are what because dark circles under the eye. The look of a formation
+                of bag appears under the eye and a shadow that forms under this bag gives an appearance of dark
+                circles. Getting rid of dark circles is of utmost importance as they can make you appear tired or
+                fatigued all the time even if you are not while also make you appear older than you actually are. Such
+                an appearance can hinder you professional and personal life and thus getting rid of dark circles is
+                important.
+              </p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/4D Facial.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">4D Facial Rejuvenation</a>
+            </div>
+            <div class="entry-content">
+              <p>A treatment that tightens and lifts the skin of the face, neck, brow and more, 4D Facial Rejuvenation
+                is a synergistic procedure utilizing two wavelengths that work together.
+                This treatment is for anyone who wants younger looking skin and long-lasting results. We work up to
+                four dimensions on deep, middle, and superficial layers of the skin. Simultaneously targeting redness,
+                lines, and wrinkles, this treatment system also offers lasting results for skin tightening and wrinkle
+                reduction with low-to-no downtime for recovery. It can be used on the face, chest, or body and can
+                result in a beautiful rejuvenation of the treated area. </p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+  </div>
+</section>
+
+<!--=================================
+ service-->
+
+
+<!--=================================
+ like what -->
+ {% include "base/snippets/like-what.html" %}
+<!--=================================
+ like what  -->
+
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Advantages of Rejuva Aesthetica </h6>
+          <h2 class="title-effect">Total Care System</h2>
+          <p>We are dedicated to providing you with the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>01<span class="theme-color">.</span></h1>
+          <h3>Innovation</h3>
+          <p> Patented Technology with Patented Micro and Single use instruments </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>02<span class="theme-color">.</span></h1>
+          <h3>Education </h3>
+          <p>We feel how you feel so many people from all around the world have undergone various procedures with
+            Rejuva Aesthetica</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="text-left">
+          <h1>03<span class="theme-color">.</span></h1>
+          <h3>Transparency</h3>
+          <p>No Stitches, No Pain, No Scars, No Marks, No Scalpels, No Bleeding, Single Session Sitting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+ {% include "contact/action-box.html" %}
+{% endblock content %}

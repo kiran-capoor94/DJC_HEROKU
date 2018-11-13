@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Rejuva Aestherica | Cosmetic Gyanecology {% endblock title %}
+
+{% block content %}
+<!--=================================
+page-title-->
+
+<section class="page-title bg-overlay-black-60 parallax" data-jarallax='{"speed": 0.6}' style="background-image: url(https://d1ue9nf4jqhjr9.cloudfront.net/static/images/page-title-1.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-title-name">
+          <h1>Cosmetic Gyanecology Treatment</h1>
+          <p>rejuva Aestheica helps you look good</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+page-title -->
+
+<section class="theme-bg page-section">
+    <div class="container">
+      <div class="row">
+        <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+          {% autoescape on %}
+  
+          {% with "https://rejuvaaesthetica.com/" as host %}
+          {% with "Share to" as share_txt %}
+  
+          <ul class="social-section-list center">
+            <li class="social-top-icons text-white">
+              {% with "facebook" as service %}
+              <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+                title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "twitter" as service %}
+              <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+                style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              {% endwith%}
+            </li>
+            <li class="social-top-icons text-white">
+              <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-pinterest-p text-white"></i> </a>
+            </li>
+            <li class="social-top-icons text-white">
+              {% with "linkedin" as service %}
+              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+                target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+              {% endwith %}
+            </li>
+          </ul>
+          {% endwith %}
+          {% endwith %}
+  
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+  </section>
+<!--=================================
+ service-->
+
+<section class="blog blog-grid-3-column white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Be Perfect ...</h6>
+          <h2 class="title-effect">Cosmetic Gyanecology Treatments</h2>
+          <p>We'll do everything we can!</p>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Hymenoplastyt.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a> Hymenoplasty </a>
+            </div>
+            <div class="entry-content">
+              <p>Hymenoplasty is a simple procedure that repair torn hymen. The torn hymen is repaired by cosmetic
+                suturing the both torn end. Dr. Arth is well experienced and has performed many surgeries till date.
+                The medical team at Rejuva Aesthetica comprise of highly skilled and qualified Consultants with
+                exposure to international systems and protocols.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Vaginoplasty.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Vaginoplasty</a>
+            </div>
+            <div class="entry-content">
+              <p>Vaginoplasty is a procedure that aims to "tighten up" a vagina that's become slack or loose from
+                vaginal childbirth or aging. Some surgeons claim it can even improve sensitivity -- a claim the
+                American College of Obstetricians and Gynecologists (ACOG) has strongly challenged.
+              </p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Labiaplasty.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#"> Labiaplasty </a>
+            </div>
+            <div class="entry-content">
+              <p>Labiaplasty, plastic surgery on the labia (the “lips" surrounding the vagina), can be performed alone
+                or with vaginoplasty. Surgery can be performed on the labia major (the larger, outer vaginal lips), or
+                the labia minor (the smaller, inner vaginal lips). Labiaplasty changes the size or shape of the labia,
+                typically making them smaller or correcting an asymmetry between them.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================ -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/Genderreassignmentsurgery.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Gender reassignment surgery</a>
+            </div>
+            <div class="entry-content">
+              <p>Gender reassignment surgery, sometimes called sex reassignment surgery, is performed to transition
+                individuals with gender dysphoria to their desired gender.
+                People with gender dysphoria often feel that they were born in the wrong gender. A biological male may
+                identify more as a female and vice versa.
+              </p>
+            </div>
+          
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="blog-entry mb-50">
+          <div class="entry-image clearfix">
+            <img class="img-responsive" src="{% static 'images/VaginalTightening.jpg' %}" alt="">
+          </div>
+          <div class="blog-detail">
+            <div class="entry-title mb-10">
+              <a href="#">Nipple Correction</a>
+            </div>
+            <div class="entry-content">
+              <p>Childbirth can stretch the vagina and the birth canal, reducing both tone and strength. An
+                overstretched or wide vagina and the resulting smoothening of the area can reduce friction and
+                pleasurable sensation during sex for both partners. It can cause intercourse to be painful and in some
+                cases leads to urinary incontinence and even bowel movement issues.
+              </p>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- ================================================ -->
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+
+
+<!--=================================
+ like what -->
+ {% include "base/snippets/like-what.html" %}
+
+<!--=================================
+ like what  -->
+
+
+<!--=================================
+ service-->
+
+<section class="service white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-md-offset-2">
+        <div class="section-title text-center">
+          <h6> Advantages of Rejuva Aesthetica </h6>
+          <h2 class="title-effect">Total Care System</h2>
+          <p>We are dedicated to providing you with the best experience possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>01<span class="theme-color">.</span></h1>
+          <h3>Innovation</h3>
+          <p> Patented Technology with Patented Micro and Single use instruments </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-30">
+          <h1>02<span class="theme-color">.</span></h1>
+          <h3>Education </h3>
+          <p>We feel how you feel so many people from all around the world have undergone various procedures with
+            Rejuva Aesthetica</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="text-left">
+          <h1>03<span class="theme-color">.</span></h1>
+          <h3>Transparency</h3>
+          <p>No Stitches, No Pain, No Scars, No Marks, No Scalpels, No Bleeding, Single Session Sitting </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ service-->
+{% include "contact/action-box.html" %}
+{% endblock content %}
