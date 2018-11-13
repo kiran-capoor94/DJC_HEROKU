@@ -86,17 +86,6 @@ LOGGING = {
     }
 }
 
-# Let's Encrypt ssl/tls https
-CORS_REPLACE_HTTPS_REFERER      = False
-HOST_SCHEME                     = "http://"
-SECURE_PROXY_SSL_HEADER         = None
-SECURE_SSL_REDIRECT             = False
-SESSION_COOKIE_SECURE           = False
-CSRF_COOKIE_SECURE              = False
-SECURE_HSTS_SECONDS             = None
-SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
-SECURE_FRAME_DENY               = False
-
 
 sentry_sdk.init(
     dsn="https://54e7a5f240404bde88c265d8f13696e8@sentry.io/1317729",
