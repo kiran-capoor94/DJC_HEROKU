@@ -29,7 +29,7 @@ MANAGERS = (
 ADMINS = MANAGERS
 
 
-SECRET_KEY = environ.get('DJANGO_SECRET_KEY', "")
+SECRET_KEY = environ.get('DJANGO_SECRET_KEY')
 
 
 ALLOWED_HOSTS = ['rejuvahome.herokuapp.com',
