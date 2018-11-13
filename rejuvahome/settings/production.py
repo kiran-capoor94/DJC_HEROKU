@@ -31,7 +31,6 @@ ADMINS = MANAGERS
 
 SECRET_KEY = environ.get('DJANGO_SECRET_KEY', "")
 
-# SECRET_KEY = 'si&65+d8a7$i-9=#b6)=53sbuwul&9b(dk^c=!*+7f3@b3o!gl'
 
 ALLOWED_HOSTS = ['rejuvahome.herokuapp.com',
                  'www.rejuvaaesthetica.com', 'rejuvaaesthetica.com']
