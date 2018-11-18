@@ -22,6 +22,57 @@ page-title -->
 {% endblock content %}
 
 {% block content2 %}
+<section class="theme-bg page-section">
+  <div class="container">
+    <div class="row">
+      <div class="social col-md-10 col-lg-10 col-sm-10 text-white social-section center clear">
+        {% autoescape on %}
+
+        {% with "https://rejuvaaesthetica.com/" as host %}
+        {% with "Share to" as share_txt %}
+
+        <ul class="social-section-list center">
+          <li class="social-top-icons text-white">
+            {% with "facebook" as service %}
+            <a href="http://www.facebook.com/share.php?u={{ host }}{{ page_url }}&amp;t={{ title }}" target="_blank"
+              title="{{ share_txt }} {{ service }}" style="background-color: #5d82d1; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            {% endwith %}
+          </li>
+          <li class="social-top-icons text-white">
+            {% with "twitter" as service %}
+            <a href="http://twitter.com/share?url={{ host }}{{ page_url }}&amp;text={{ title }}" target="_blank" title="{{ share_txt }} {{ service }}"
+              style="background-color: #40bff5; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+            {% endwith%}
+          </li>
+          <li class="social-top-icons text-white">
+            <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+              target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-pinterest-p text-white"></i> </a>
+          </li>
+          <li class="social-top-icons text-white">
+            {% with "linkedin" as service %}
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
+              target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #238cc8; padding: 5px 30px 5px 30px;">
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            {% endwith %}
+          </li>
+        </ul>
+        {% endwith %}
+        {% endwith %}
+
+        {% endautoescape %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!--=================================
  masnary blog-->
 
