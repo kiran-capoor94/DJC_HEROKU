@@ -25,6 +25,7 @@ urlpatterns = [
     path('contact/', contact_page, name='contact'),
     path('users/',include('apps.users.urls')),
     path('blogs/', include('apps.blogs.urls', namespace='blogs')),
+    path('gallery/', include('apps.gallery.urls', namespace='gallery')),
     path('privacy-policy/', PrivacyPolicyView.as_view(), name='privacy-policy'),
     path('terms-conditions/', TnCView.as_view(), name='tnc'),
     path('hair-treatment/', HairTreatmentsView.as_view(), name='hair-treatment'),

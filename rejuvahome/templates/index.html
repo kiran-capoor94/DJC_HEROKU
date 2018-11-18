@@ -13,7 +13,7 @@
       <ul>
         <!-- SLIDE  -->
         <li data-index="rs-13" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-          data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="revolution/assets/slider-medical/100x50_4c806-01.jpg"
+          data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="{% static 'images/medical/pexels-photo-325682.jpeg' %}"
           data-rotate="0" data-saveperformance="on" data-title="Slide" data-param1="" data-param2="" data-param3=""
           data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
           data-description="">
@@ -51,12 +51,12 @@
         </li>
         <!-- SLIDE  -->
         <li data-index="rs-15" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-          data-hideslideonmobile="on" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="revolution/assets/slider-medical/100x50_569a2-02.jpg"
+          data-hideslideonmobile="on" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="{% static 'images/3.jpg' %}"
           data-rotate="0" data-saveperformance="on" data-title="Slide" data-param1="" data-param2="" data-param3=""
           data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
           data-description="">
           <!-- MAIN IMAGE -->
-          <img src="{% static 'images/medical/doctor-medical-medicine-health-42273.jpeg' %}" alt="" data-bgposition="center center"
+          <img src="{% static 'images/3.jpg' %}" alt="" data-bgposition="center center"
             data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
           <!-- LAYERS -->
           <!-- LAYER NR. 5 -->
@@ -218,109 +218,7 @@ About-->
 <!--=================================
 feature text -->
 
-<section class="page-section-ptb theme-bg position-re">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-title line center dark-bg text-center">
-          <h6 class="subtitle">Our Featured services </h6>
-          <h2 class="title">What we offer</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'hair-treatment' %}">
-              <img alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" src="{% static 'images/friendly-smiling-man_4460x4460.jpg' %}"
-                class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'hair-treatment' %}">
-              <h4 class="text-back text-white">Hair Transplant</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'face-treatment' %}">
-              <img alt="Rejuva Aesthetica Hair transplant clinic ahemdabad facelift" src="{% static 'images/pexels-photo-1036623.jpeg' %}"
-                class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'face-treatment' %}">
-              <h4 class="text-back text-white">FaceLift</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'cosmetic-treatment' %}">
-              <img alt="Rejuva Aesthetica Hair transplant clinic ahemdabad meso therapy" src="{% static 'images/pexels-photo-1204505.jpeg' %}"
-                class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'cosmetic-treatment' %}">
-              <h4 class="text-back text-white">Cosmetic Gynaecology</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'face-treatment' %}">
-              <img alt="" src="{% static 'images/pexels-photo-355164.jpeg' %}" class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'face-treatment' %}">
-              <h4 class="text-back text-white">Chin Implant</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'breast-treatment' %}">
-              <img alt="" src="{% static 'images/replacing-breast-implant-west-palm-beach.png' %}" class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'breast-treatment' %}">
-              <h4 class="text-back text-white">Breast Implant</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="feature-3 mb-30">
-          <div class="feature-3-image mb-20">
-            <a href="{% url 'body-treatment' %}">
-              <img alt="" src="{% static 'images/pexels-photo-196640.jpeg' %}" class="img-responsive">
-            </a>
-          </div>
-          <div class="feature-3-info">
-            <a href="{% url 'body-treatment' %}">
-              <h4 class="text-back text-white">Liposuction</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include "base/snippets/feature-box.html" %}
 
 <!--=================================
 feature text -->

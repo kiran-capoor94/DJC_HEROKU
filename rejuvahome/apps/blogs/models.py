@@ -6,7 +6,7 @@ from django.db.models.signals import pre_save, post_save
 
 from .utils import unique_slug_generator
 from apps.tags.models import Tag
-from apps.pages.models import Page
+# from apps.pages.models import Page
 
 BLOG_STATUS_CHOICES = (('draft','Draft'),
     ('published','Published'),)

@@ -2,6 +2,7 @@
 {% url 'about' as about_url %}
 {% url 'contact' as contact_url %}
 {% url 'blogs:list' as blogs_url%}
+{% url 'gallery:list' as gallery_url%}
 
 {% load static %}
 
@@ -46,7 +47,8 @@ mega menu -->
                       <li><a href="{% url 'breast-treatment' %}">Breast Treatment</a> </li>
                       <li><a href="{% url 'cosmetic-treatment' %}">Cosmetic Treatment</a> </li>
                     </ul>
-                  <li {% if request.path == blogs_url %}class="active"{% endif %}><a href="{% url 'blogs:list' %}"> Blog </a> </li>
+                  <li {% if request.path == gallery_url %}class="active"{% endif %}><a href="{{ gallery_url }}"> Gallery </a> </li>
+                  <li {% if request.path == blogs_url %}class="active"{% endif %}><a href="{{ blogs_url }}"> Blog </a> </li>
                   <li {% if request.path == contact_url %}class="active"{% endif %}><a href="{{ contact_url }}"> Contact </a> </li>
                 </ul>
               </div>

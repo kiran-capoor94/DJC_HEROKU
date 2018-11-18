@@ -8826,7 +8826,7 @@ img#logo-footer {
 
 
 .social-top-icons {
-    padding: 0px 20px 0px 25px;
+    margin: 0px 5px 0px 5px;
     display: flex;
     list-style: none;
     /* width: 100%; */
@@ -8853,5 +8853,5 @@ img#logo-footer {
 
 .social-top-icons a:hover{
     background-color: #512d95!important;
-    border: 1px solid white;
+    border: 0.3px solid white;
 }
