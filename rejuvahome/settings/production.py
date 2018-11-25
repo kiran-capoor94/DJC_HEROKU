@@ -33,7 +33,7 @@ SECRET_KEY = environ.get('DJANGO_SECRET_KEY')
 
 
 ALLOWED_HOSTS = ['rejuvahome.herokuapp.com',
-                 'www.rejuvaaesthetica.com', 'rejuvaaesthetica.com']
+                 'www.rejuvaaesthetica.com', '.rejuvaaesthetica.com']
 
 INSTALLED_APPS += (
     # 'django.contrib.sitemaps',

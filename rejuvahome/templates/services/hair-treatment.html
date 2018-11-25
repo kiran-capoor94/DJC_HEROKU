@@ -51,7 +51,7 @@ page-title -->
           <li class="social-top-icons text-white">
             <a href="http://www.pinterest.com/shareArticle?mini=true&amp;url={{ host }}{{ page_url }}&amp;title={{ title }}&amp;ro=false&amp;summary=&amp;source="
               target="_blank" title="{{ share_txt }} {{ service }}" style="background-color: #e13138; padding: 5px 30px 5px 30px;">
-              <i class="fab fa-pinterest-p text-white"></i> 
+              <i class="fab fa-pinterest-p text-white"></i>
             </a>
           </li>
           <li class="social-top-icons text-white">
@@ -76,7 +76,7 @@ page-title -->
 <!--=================================
  service-->
 
-<section class="blog blog-grid-2-column white-bg page-section-ptb">
+<section class="masonry-main white-bg page-section-ptb">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-md-offset-2">
@@ -89,67 +89,258 @@ page-title -->
     </div>
     <!-- ================================================ -->
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="blog-entry mb-50">
-          <div class="entry-image clearfix">
-            <img class="img-responsive" src="{% static 'images/friendly-smiling-man_4460x4460.jpg' %}" alt="">
-          </div>
-          <div class="blog-detail">
-            <div class="entry-title mb-10">
-              <a> Surgical Hair Transplant </a>
+      <div class="masonry columns-2">
+        <div class="grid-sizer"></div>
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/hair-transplant.jpg' %}" alt="">
             </div>
-            <div class="entry-content">
-              <p>
-                Surgical Treatments include, <strong>FUT, FUE, PRP, Oxygen Therapy, Neo Graft</strong>.
-                Rejuva Aesthetica excels in performing these treatments. Dr. Arth Shah has immense expertise to
-                make this process a comfortable one.
-              </p>
-            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a> Surgical Hair Transplant </a>
+              </div>
+              <div class="entry-content">
+                <p>
+                  Hair transplantation is a surgical technique that moves hair follicles from a part of
+                  the body called the 'donor site' to a bald or balding part of the body known as the
+                  'recipient site'. It is primarily used to treat male pattern baldness. In this
+                  minimally invasive procedure, grafts containing hair follicles that are genetically
+                  resistant to balding, (like the back of the head) are transplanted to the bald scalp.</p>
+                <p><b>How Do Hair Transplants Work?</b><br />
 
+                  A hair transplant is a procedure that treats balding by moving better quality hair
+                  follicles from one area in order to restore hair in the balding areas. Hair
+                  transplantation involves the harvesting of hair follicles from donor areas where hair
+                  is not prone to baldness. The donor area is normally located on the back or sides of
+                  the head in typical male patterned baldness although hair can be taken from any part of
+                  the body such as the beard, torso and extremities. The hair grafts AKA follicular units
+                  should be harvested and transplanted in naturally occurring follicular units in order
+                  to restore the balding area with the most natural looking results.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/FUT.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#">Follicular Unit Concept</a>
+              </div>
+              <div class="entry-content">
+                <p>Hair follicles generally don’t grow individually. They bundle in groups of
+                  1-4 hair follicles. These groupings are usually held together with a
+                  collagen band and they have their own oil grand, nerve and small vessel.
+                  Follicular units are the way hair grows in nature and that is why
+                  transplanting hair in their native follicular units can create the most
+                  natural look.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/HAIR-LOSS1.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> Harvesting Hair </a>
+              </div>
+              <div class="entry-content">
+                <p>Follicular unit transplant is considered the gold standard of modern hair restoration
+                  and the hair is usually harvested through two main methods. Choosing one of the two
+                  types of harvesting has to do with the preferences of the patient as well as how they
+                  plan to wear their hair in the donor area.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-      </div>
-      <!-- ================================================ -->
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="blog-entry mb-50">
-          <div class="entry-image clearfix">
-            <img class="img-responsive" src="{% static 'images/FUT.jpg' %}" alt="">
-          </div>
-          <div class="blog-detail">
-            <div class="entry-title mb-10">
-              <a href="#">Follicular Unit Concept</a>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/NeoGraft.jpg' %}" alt="">
             </div>
-            <div class="entry-content">
-              <p>Hair follicles generally don’t grow individually. They bundle in groups of
-                1-4 hair follicles. These groupings are usually held together with a
-                collagen band and they have their own oil grand, nerve and small vessel.
-                Follicular units are the way hair grows in nature and that is why
-                transplanting hair in their native follicular units can create the most
-                natural look.
-              </p>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> Neo Graft </a>
+              </div>
+              <div class="entry-content">
+                <p>Neo Graft’s minimally invasive hair transplant procedure is a much more desirable
+                  option for both men and women!
+                  <br />
+                  The Neo Graft Automated Hair Transplantation system is a leading edge technology for
+                  men and women looking to restore their hairline using the Follicular Unit Extraction
+                  (FUE). This method gently removes the individual follicles from the back of the head
+                  (the “donor area”) in their naturally occurring groupings of about 1-4 hairs.
+                  <br />
+                  Next, the follicles are then artistically implanted in the areas of the scalp where
+                  balding has occurred. This helps to complement the facial structure and current
+                  hairline.
+              </div>
             </div>
-
           </div>
         </div>
-
-      </div>
-      <!-- ================================================ -->
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="blog-entry mb-50">
-          <div class="entry-image clearfix">
-            <img class="img-responsive" src="{% static 'images/HAIR-LOSS1.jpg' %}" alt="">
-          </div>
-          <div class="blog-detail">
-            <div class="entry-title mb-10">
-              <a href="#"> Harvesting Hair </a>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/Female_baldness_info.jpg' %}" alt="">
             </div>
-            <div class="entry-content">
-              <p>Follicular unit transplant is considered the gold standard of modern hair restoration
-                and the hair is usually harvested through two main methods. Choosing one of the two
-                types of harvesting has to do with the preferences of the patient as well as how they
-                plan to wear their hair in the donor area.
-              </p>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> Female Pattern Baldness </a>
+              </div>
+              <div class="entry-content">
+                <p>As women get older, their slowing metabolisms can make it harder and harder to stay
+                  thin. But the one thing that seems to get thinner without much effort is something they
+                  wish didn't was their hair.
+
+                  Ironic, isn't it?
+                  <br /><br />
+                  What happens with female pattern baldness is that over time the hair follicle shrinks
+                  and eventually stops growing new hair. The part in your hair may get wider or your
+                  ponytail may lose its bulk. Maybe there's an unusually large amount of hair on your
+                  pillow when you wake. Or there's a lot in the comb or brush, even though you brushed
+                  softly and without tugging. This type of hair loss usually begins in midlife but can
+                  begin earlier.
+                  <br /><br />
+                  Why does it happen? Although the reasons are not well understood, it may be related to
+                  such things as aging, changes in hormone levels (specifically the male hormone
+                  androgen) or a family history of male or female pattern baldness.
+                  <br /><br />
+                  Diagnosis is usually based on your medical history, ruling out other causes of hair
+                  loss (like thyroid problems or recent surgery) and the actual appearance and pattern of
+                  the hair loss. Sadly, there's no way to prevent it but there is a way to treat it
+                  contact Rejuva Aestheica now.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/fut.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> FUT - (Follicular Unit Transplantation) </a>
+              </div>
+              <div class="entry-content">
+                <p>Also known as ‘strip surgery’, FUT stands for Follicular Unit Transplantation and is a
+                  type of surgical hair transplant known for minimizing trauma to the scalp and producing
+                  natural-looking results.
+                  <br />
+                  In FUT operations, ‘follicular units’ made up of naturally occurring groups of
+                  one-to-four hairs, sebaceous (oil) glands, nerves, a small muscle, and occasionally
+                  fine vellus hairs, are transplanted. Preserving the unit as a whole in this way is
+                  thought to help hair growth once transplanted.
+                  <br />
+                  Modern Follicular Unit Transplantation is considered an advance on older hair
+                  transplant techniques which used larger grafts, and often gave obvious and
+                  ‘pluggy’-looking results. Transplanting the smaller units used in FUT allows thousands
+                  of grafts to be transplanted in a single session, resulting in a more natural-looking
+                  effect for the patient. If done well, the new grafts should mimic normal hair growth
+                  patterns and be virtually undetectable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/hair loss.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> Hair Loss </a>
+              </div>
+              <div class="entry-content">
+                <p>Hair loss, also called alopecia, is a disorder caused by an interruption in the body’s
+                  cycle of hair production. Hair loss can occur anywhere on the body, but most commonly
+                  affects the scalp. On average, the scalp has 100,000 hairs that cycle through periods
+                  of growing, resting, falling out, and regenerating.</p>
+                <p>A hair growth cycle consists of three phases. During the anagen phase, hair grows
+                  actively. This phase may last for years. During the catagen phase, hair stops growing
+                  and separates from its follicle, which is the structure beneath the skin that holds the
+                  hair in place. The catagen phase lasts about 10 days. During the telogen phase, the
+                  follicle rests for two or three months, and then the hair falls out. The next anagen
+                  phase begins as a new hair grows in the same follicle. Most people lose 50 to 100 hairs
+                  per day as part of this natural cycle.borum!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/meso.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> MESOTHERAPY </a>
+              </div>
+              <div class="entry-content">
+                <p>
+                  Mesohair therapy is the procedure of administering hair growth factors, vitamins &
+                  proteins in the scalp of patients suffering from hair fall. Hair fall is attributed to
+                  hormonal effects and also due to depletion of the proteins and minerals. Mesohair
+                  therapy replaces this loss and helps to regrow the hair. It also has certain substances
+                  which block the effect of hormones on hair. It contains growth factors which help in
+                  growing new hair.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================ -->
+        <div class="masonry-item">
+          <div class="blog-entry mb-50">
+            <div class="entry-image clearfix">
+              <img class="img-responsive" src="{% static 'images/PRP12.jpg' %}" alt="">
+            </div>
+            <div class="blog-detail">
+              <div class="entry-title mb-10">
+                <a href="#"> Platelet Rich Plasma Therapy </a>
+              </div>
+              <div class="entry-content">
+                <p>
+                  Platelet rich plasma is a new procedure of hair rejuvenation where there is bio
+                  stimulation of the stem cells of the dermis using an injection technique which uses the
+                  patient’s platelet rich plasma (PRP) which is extracted from your own blood.</p>
+                <p>Hair loss is one of the most disappointing cosmetic issues that can happen to both men
+                  and women. Hair loss can lead to a drastic deterioration in confidence. For those that
+                  are looking to reverse the effects of hair loss, PRP therapy is a useful option. Dr.
+                  Rapaport feels this non-invasive procedure is a therapy option that can work on both
+                  men and women.
+                </p>
+                <p>PRP therapy was developed due to new medical research and the advancement of technology
+                  within the medical community. Scientific studies have recently been published
+                  discussing PRP hair restoration technique as an all-natural and non-invasive procedure
+                  that has been found to stimulate the growth of hair and to reduce the effects of
+                  thinning. One particular study published in the Dermatologic Surgery, Italian
+                  physicians successfully used PRP in a clinical trial.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -213,5 +404,5 @@ page-title -->
 
 <!--=================================
  service-->
- {% include "contact/action-box.html" %}
+{% include "contact/action-box.html" %}
 {% endblock content %}
