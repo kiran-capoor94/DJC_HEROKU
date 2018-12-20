@@ -14,16 +14,16 @@ DEBUG = False
 TEMPLATES[0]['OPTIONS']['debug'] = False
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'kirancapoor94@gmail.com'
+EMAIL_HOST_USER = environ.get('EMAIL_ID')
 EMAIL_HOST_PASSWORD = environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Rejuva Website <kiran.capoor94@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Rejuva Website'
 BASE_URL = 'https://www.rejuvaaesthetica.com/'
 
 
 MANAGERS = (
-    ('Kiran Capoor', "kiran.capoor94@gmail.com"),
+    ('Kiran Capoor', environ.get('EMAIL_ID')),
 )
 
 ADMINS = MANAGERS
