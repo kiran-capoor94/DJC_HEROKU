@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from apps.pages.views import RobotsView, SiteMapView
+from apps.pages.views import RobotsView
 
 urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.pages.urls')),
     path('robots.txt/', RobotsView.as_view(), name='robots'),
-    path('sitemap.xml/', SiteMapView.as_view(), name='sitemap'),
+    # path('sitemap.xml/', SiteMapView.as_view(), name='sitemap'),
 
 ]
 

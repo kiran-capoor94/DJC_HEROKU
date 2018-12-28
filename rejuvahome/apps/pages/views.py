@@ -119,10 +119,11 @@ class BreastTreatmentsView(TemplateView):
 class LaserTreatmentsView(TemplateView):
     template_name = 'services/laser.html'
 
-class RobotsView(TemplateView):
-    template_name='robots.txt'
-    content_type='text/plain'
 
-class SiteMapView(TemplateView):
-    template_name='sitemap.xml'
-    content_type='text/xml'
+class RobotsView(TemplateView):
+    template_name = 'robots.txt'
+    content_type = 'text/plain'
+
+# class SiteMapView(TemplateView):
+    # template_name='sitemap.xml'
+    # content_type='text/xml'
