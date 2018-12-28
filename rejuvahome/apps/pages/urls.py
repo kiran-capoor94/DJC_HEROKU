@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.urls import path, include
 
-from .views import home_page, contact_page, about_page, PrivacyPolicyView, TnCView, HairTreatmentsView, FaceTreatmentsView, BodyTreatmentsView, SkinTreatmentsView, CosmeticTreatmentsView, BreastTreatmentsView, LaserTreatmentsView, RobotsView, SiteMapView
+from .views import home_page, contact_page, about_page, PrivacyPolicyView, TnCView, HairTreatmentsView, FaceTreatmentsView, BodyTreatmentsView, SkinTreatmentsView, CosmeticTreatmentsView, BreastTreatmentsView, LaserTreatmentsView
 
 
 urlpatterns = [
@@ -23,7 +23,7 @@ urlpatterns = [
     path('about-us/', about_page, name='about'),
     # path('services/', Home.as_view(), name='services'),
     path('contact/', contact_page, name='contact'),
-    path('users/',include('apps.users.urls')),
+    path('users/', include('apps.users.urls')),
     path('blogs/', include('apps.blogs.urls', namespace='blogs')),
     path('gallery/', include('apps.gallery.urls', namespace='gallery')),
     path('privacy-policy/', PrivacyPolicyView.as_view(), name='privacy-policy'),
@@ -32,10 +32,10 @@ urlpatterns = [
     path('body-treatment/', BodyTreatmentsView.as_view(), name='body-treatment'),
     path('face-treatment/', FaceTreatmentsView.as_view(), name='face-treatment'),
     path('skin-treatment/', SkinTreatmentsView.as_view(), name='skin-treatment'),
-    path('breast-treatment/', BreastTreatmentsView.as_view(), name='breast-treatment'),
-    path('cosmetic-treatment/', CosmeticTreatmentsView.as_view(), name='cosmetic-treatment'),
+    path('breast-treatment/', BreastTreatmentsView.as_view(),
+         name='breast-treatment'),
+    path('cosmetic-treatment/', CosmeticTreatmentsView.as_view(),
+         name='cosmetic-treatment'),
     path('laser-treatment/', LaserTreatmentsView.as_view(), name='laser'),
-    path('robots.txt/', RobotsView.as_view(), name='robots'),
-    path('sitemap.xml/', SiteMapView.as_view(), name='sitemap'),
 
 ]
