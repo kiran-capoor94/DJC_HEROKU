@@ -1290,7 +1290,7 @@ mejs.HtmlMediaElementShim = {
             errorContent = '<a href="' + playback.url + '">';
 
             if (poster !== '') {
-                errorContent += '<img src="' + poster + '" width="100%" height="100%" alt="" />';
+                errorContent += '<img class="lozad" data-src="' + poster + '" width="100%" height="100%" alt="" />';
             }
 
             errorContent += '<span>' + mejs.i18n.t('Download File') + '</span></a>';
@@ -5174,7 +5174,7 @@ if (typeof jQuery != 'undefined') {
 
             if (typeof img == 'undefined' || typeof img.fadeIn == 'undefined') {
 
-                t.slides.entries.imgs[index] = img = $('<img src="' + url + '">')
+                t.slides.entries.imgs[index] = img = $('<img class="lozad" data-src="' + url + '">')
                         .on('load', function() {
                             img.appendTo(t.slidesContainer)
                                 .hide()
