@@ -1,8 +1,8 @@
 import datetime
 import os
 
-# AWS_S3_ACCESS_KEY_ID = os.environ.get("AWS_S3_ACCESS_KEY_ID")
-# AWS_S3_SECRET_ACCESS_KEY = os.environ.get("AWS_S3_SECRET_ACCESS_KEY")
+AWS_S3_ACCESS_KEY_ID = os.environ.get("AWS_S3_ACCESS_KEY_ID")
+AWS_S3_SECRET_ACCESS_KEY = os.environ.get("AWS_S3_SECRET_ACCESS_KEY")
 
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
@@ -13,7 +13,7 @@ AWS_S3_CUSTOM_DOMAIN = 'd1ue9nf4jqhjr9.cloudfront.net'
 DEFAULT_FILE_STORAGE = 'rejuvahome.libs.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'rejuvahome.libs.aws.utils.StaticRootS3BotoStorage'
 
-COMPRESS_STORAGE = STATICFILES_STORAGE
+# COMPRESS_STORAGE = STATICFILES_STORAGE
 
 AWS_STORAGE_BUCKET_NAME = 'rejuvahome'
 S3DIRECT_REGION = 'ap-south-1'
