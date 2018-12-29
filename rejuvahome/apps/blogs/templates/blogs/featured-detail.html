@@ -4,6 +4,6 @@
 {{ object.title }} <br />
 {{ object.content }} <br />
 {% if object.featured_image %}
-<img class="lozad" data-src='{{ object.featured_image.url }}' class='img-fluid' />
+<img src='{{ object.featured_image.url }}' class='img-fluid' />
 {% endif %}
 {% endblock content %}
