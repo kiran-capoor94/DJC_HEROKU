@@ -15,7 +15,7 @@ import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = dirname(dirname(__file__))
-#Add the base directory for easy imports
+# Add the base directory for easy imports
 sys.path.append(BASE_DIR)
 
 SITE_ID = 1
