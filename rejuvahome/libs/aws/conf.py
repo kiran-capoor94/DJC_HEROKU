@@ -36,6 +36,7 @@ AWS_HEADERS = {
     'Cache-Control': 'max-age=%d' % (int(two_months.total_seconds()), ),
 }
 
+
 AWS_DEFAULT_ACL = 'public-read'
 AWS_QUERYSTRING_AUTH = False
 
