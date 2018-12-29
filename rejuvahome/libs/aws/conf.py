@@ -13,6 +13,8 @@ AWS_S3_CUSTOM_DOMAIN = 'd1ue9nf4jqhjr9.cloudfront.net'
 DEFAULT_FILE_STORAGE = 'rejuvahome.libs.aws.utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'rejuvahome.libs.aws.utils.StaticRootS3BotoStorage'
 
+COMPRESS_STORAGE = STATICFILES_STORAGE
+
 AWS_STORAGE_BUCKET_NAME = 'rejuvahome'
 S3DIRECT_REGION = 'ap-south-1'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME

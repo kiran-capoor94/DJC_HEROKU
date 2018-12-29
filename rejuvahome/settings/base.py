@@ -160,7 +160,6 @@ STATICFILES_FINDERS = (
 
 )
 
-
 MEDIA_ROOT = join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
@@ -203,4 +202,9 @@ JET_THEMES = [
         'color': '#222',
         'title': 'Light Gray'
     }
+]
+
+COMPRESS_CSS_FILTERS = [
+
+    'compressor.filters.yui.YUICSSFilter',
 ]
