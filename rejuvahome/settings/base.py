@@ -204,6 +204,8 @@ JET_THEMES = [
     }
 ]
 
+COMPRESS_ROOT = STATIC_ROOT
+COMPRESS_URL = STATIC_URL
 COMPRESS_CSS_FILTERS = [
 
     'compressor.filters.yui.YUICSSFilter',
