@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
 
     'django.contrib.staticfiles',
-    "compressor",
+    # 'compressor',
 
 ]
 
@@ -203,10 +203,14 @@ JET_THEMES = [
         'title': 'Light Gray'
     }
 ]
+# COMPRESS_EMABLED = True
+# COMPRESS_OFFLINE = True
+# COMPRESS_ROOT = STATIC_ROOT
+# COMPRESS_URL = STATIC_URL
+# COMPRESS_CSS_FILTERS = [
 
-COMPRESS_ROOT = STATIC_ROOT
-COMPRESS_URL = STATIC_URL
-COMPRESS_CSS_FILTERS = [
-
-    'compressor.filters.yui.YUICSSFilter',
-]
+#     'compressor.filters.yui.YUICSSFilter',
+# ]
+# COMPRESS_PARSER = [
+#     'compressor.parser.BeautifulSoupParser',
+# ]
