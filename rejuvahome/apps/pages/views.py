@@ -124,6 +124,6 @@ class RobotsView(TemplateView):
     template_name = 'robots.txt'
     content_type = 'text/plain'
 
-# class SiteMapView(TemplateView):
-    # template_name='sitemap.xml'
-    # content_type='text/xml'
+class SiteMapView(TemplateView):
+    template_name='sitemap.xml'
+    content_type='text/xml'
