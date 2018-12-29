@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-from os.path import dirname, join, abspath
+from os.path import dirname, join
 import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -55,6 +55,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.gzip.GZipMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -62,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'rejuvahome.urls'
@@ -147,7 +150,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = join(BASE_DIR,'static')
+STATIC_ROOT = join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = (
     join(BASE_DIR, 'assets'),
@@ -160,7 +163,7 @@ STATICFILES_FINDERS = (
 
 )
 
-MEDIA_ROOT = join(BASE_DIR,'media')
+MEDIA_ROOT = join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # Third party migratiosn
@@ -168,14 +171,15 @@ MIGRATION_MODULES = {
     'django.contrib.sites': 'migrations.sites',
 }
 
-#JET Settings
+# JET Settings
 
 JET_SIDE_MENU_COMPACT = True
 JET_THEMES = [
     {
-        'theme': 'default', # theme folder name
-        'color': '#47bac1', # color of the theme's button in user menu
-        'title': 'Default' # theme title
+        'theme': 'default',
+        # theme folder name
+        'color': '#47bac1',  # color of the theme's button in user menu
+        'title': 'Default'  # theme title
     },
     {
         'theme': 'green',
@@ -203,14 +207,3 @@ JET_THEMES = [
         'title': 'Light Gray'
     }
 ]
-# COMPRESS_EMABLED = True
-# COMPRESS_OFFLINE = True
-# COMPRESS_ROOT = STATIC_ROOT
-# COMPRESS_URL = STATIC_URL
-# COMPRESS_CSS_FILTERS = [
-
-#     'compressor.filters.yui.YUICSSFilter',
-# ]
-# COMPRESS_PARSER = [
-#     'compressor.parser.BeautifulSoupParser',
-# ]
