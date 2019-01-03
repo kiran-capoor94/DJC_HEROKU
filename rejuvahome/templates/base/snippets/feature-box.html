@@ -1,4 +1,3 @@
-
 {% load static %}
 
 
@@ -16,11 +15,17 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img src="{% static 'images/medical/man.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <a href="{% url 'hair-treatment' %}">
+                            <img src="{% static 'images/medical/man.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                                width="120px">
+                        </a>
                     </div>
                     <div class="feature-info">
-                        <h4 class="pb-10"> Hair Transplant </h4>
-                        {% comment %} <p>Vero quod conseqt quibusdam, sed quia nesciunt in accusamus necessitatibus modi adipisci
+                        <a href="{% url 'hair-treatment' %}">
+                            <h4 class="pb-10"> Hair Transplant </h4>
+                        </a>
+                        {% comment %} <p>Vero quod conseqt quibusdam, sed quia nesciunt in accusamus necessitatibus
+                            modi adipisci
                             officia dolor sit amet, consectetur adipisicing elit. </p> {% endcomment %}
                     </div>
                 </div>
@@ -28,11 +33,17 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img  src="{% static 'images/medical/spa.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <a href="{% url 'face-treatment' %}">
+                            <img src="{% static 'images/medical/spa.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                            width="120px">
+                        </a>
                     </div>
                     <div class="feature-info">
-                        <h4 class="pb-10">Face Lift</h4>
-                        {% comment %} <p>Consectetur adipisicing elit. Vero quod conseqt quibusdam, sed quia nesciunt in accusamus
+                        <a href="{% url 'face-treatment' %}">
+                            <h4 class="pb-10">Face Lift</h4>
+                        </a>
+                        {% comment %} <p>Consectetur adipisicing elit. Vero quod conseqt quibusdam, sed quia nesciunt
+                            in accusamus
                             necessitatibus modi adipisci officia dolor sit amet</p> {% endcomment %}
                     </div>
                 </div>
@@ -40,11 +51,13 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img src="{% static 'images/medical/vagina.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <img src="{% static 'images/medical/vagina.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                            width="120px">
                     </div>
                     <div class="feature-info">
                         <h4 class="pb-10">Cosmetic Gynecology</h4>
-                        {% comment %} <p>Sed quia nesciunt in accusamus necessitatibus modi adipisci officia dolor sit amet,
+                        {% comment %} <p>Sed quia nesciunt in accusamus necessitatibus modi adipisci officia dolor sit
+                            amet,
                             consectetur adipisicing elit. Vero quod conseqt quibusdam</p> {% endcomment %}
                     </div>
                 </div>
@@ -54,11 +67,13 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img src="{% static 'images/medical/nose.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <img src="{% static 'images/medical/nose.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                            width="120px">
                     </div>
                     <div class="feature-info">
                         <h4 class="pb-10"> Rhinoplasty </h4>
-                        {% comment %} <p>Necessitatibus modi adipisci officia dolor sit amet, consectetur adipisicing elit. Vero quod
+                        {% comment %} <p>Necessitatibus modi adipisci officia dolor sit amet, consectetur adipisicing
+                            elit. Vero quod
                             conseqt quibusdam, sed quia nesciunt in accusamus</p> {% endcomment %}
                     </div>
                 </div>
@@ -66,11 +81,13 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img src="{% static 'images/medical/breast-cancer.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <img src="{% static 'images/medical/breast-cancer.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                            width="120px">
                     </div>
                     <div class="feature-info">
                         <h4 class="pb-10">Breast Implant</h4>
-                        {% comment %} <p>Accusamus necessitatibus modi adipisci officia dolor sit amet, consectetur adipisicing elit.
+                        {% comment %} <p>Accusamus necessitatibus modi adipisci officia dolor sit amet, consectetur
+                            adipisicing elit.
                             Vero quod conseqt quibusdam, sed quia nesciunt in </p> {% endcomment %}
                     </div>
                 </div>
@@ -78,11 +95,13 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="feature-text round border text-center mb-30 box-shadow white-bg">
                     <div class="feature-icon">
-                        <img  src="{% static 'images/medical/fat.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant" width="120px">
+                        <img src="{% static 'images/medical/fat.svg' %}" alt="Rejuva Aesthetica Hair transplant clinic ahemdabad hair transplant"
+                            width="120px">
                     </div>
                     <div class="feature-info">
                         <h4 class="pb-10">Fat Reduction</h4>
-                        {% comment %} <p>Quia nesciunt in accusamus necessitatibus modi adipisci officia dolor sit amet, consectetur
+                        {% comment %} <p>Quia nesciunt in accusamus necessitatibus modi adipisci officia dolor sit
+                            amet, consectetur
                             adipisicing elit. Vero quod conseqt quibusdam sed</p> {% endcomment %}
                     </div>
                 </div>
