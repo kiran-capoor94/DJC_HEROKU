@@ -10,7 +10,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122367262-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-122367262-2');
@@ -23,7 +26,7 @@
   <meta name="description" content="Hair Transplant Clinic in Ahmedabad, Plastic Surgeon in Ahmedabad, Liposuction in Ahmedabad and Skin Doctor in Ahmedabad." />
   <meta name="author" content="kirancapoor.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <meta name="google-site-verification" content="UvcqhmQSaUgcGZFy98j3TiXV9_IxKaUm08d2KA6Pmco" />
   <title> {{ title }} {% block title %}{% endblock %} </title>
 
@@ -31,6 +34,34 @@
   <link rel="shortcut icon" href="{% static 'images/Rejuvaupdated.png' %}" />
 
   {% include "base/css.html" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "MedicalBusiness",
+      "image": [
+        "https://s3.ap-south-1.amazonaws.com/rejuvahome/static/images/Dr+Arth+Shah+Clinic.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahemadabad",
+        "addressRegion": "Gujrat",
+        "postalCode": "380015",
+        "streetAddress": "02, Himalaya Emerald"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4",
+        "reviewCount": "250"
+      },
+      "name": "Rejuva Aesthetica",
+      "openingHours": [
+        "Mo-Sa 09:00-19:00"
+      ],
+      "priceRange": "$$",
+      "telephone": "(91)743-600-0990",
+      "url": "https://www.rejuvaaesthetica.com"
+    }
+  </script>
 
 </head>
 
@@ -59,21 +90,29 @@
     {% block content2 %}
     {% endblock content2 %}
 
-  <!-- WhatsHelp.io widget -->
-  <script type="text/javascript">
+    <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
       (function () {
-          var options = {
-              facebook: "1961486154170650", // Facebook page ID
-              call_to_action: "Message us", // Call to action
-              position: "right", // Position may be 'right' or 'left'
-          };
-          var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        var options = {
+          facebook: "1961486154170650", // Facebook page ID
+          call_to_action: "Message us", // Call to action
+          position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol,
+          host = "whatshelp.io",
+          url = proto + "//static." + host;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () {
+          WhWidgetSendButton.init(host, proto, options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
       })();
-  </script>
-  <!-- /WhatsHelp.io widget -->
+    </script>
+    <!-- /WhatsHelp.io widget -->
 
     <!--=================================
  footer -->
@@ -89,7 +128,8 @@
                   <li class="facebook"><a href="https://bit.ly/2LIYJKu"><i class="fab fa-facebook"></i>
                       <span> Facebook </span></a>
                   </li>
-                  <li class="instagram" style="background-color:#e1326b;" ><a href="https://www.instagram.com/rejuva_aesthetica/"><i class="fab fa-instagram"></i>
+                  <li class="instagram" style="background-color:#e1326b;"><a href="https://www.instagram.com/rejuva_aesthetica/"><i
+                        class="fab fa-instagram"></i>
                       <span> Instagram </span> </a></li>
                   <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i>
                       <span> Pinterest </span> </a></li>
