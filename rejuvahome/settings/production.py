@@ -1,3 +1,5 @@
+from urllib2 import Request, urlopen
+import os
 from os import environ
 from os.path import dirname, join
 
@@ -104,3 +106,13 @@ CSRF_COOKIE_SECURE = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_SECONDS = 1000000
 SECURE_FRAME_DENY = True
+
+
+REAL_MAIL_KEY = environ.get('REALEMAIL_API_KEY')
+request = Request(
+    'https://realemail.expeditedaddons.com/?api_key={REALEMAIL_API_KEY}&email=email@example.org&fix_typos=false')
+
+response_body = urlopen(request).read()
+
+# The response is a JSON dictionary
+print(response_body)
