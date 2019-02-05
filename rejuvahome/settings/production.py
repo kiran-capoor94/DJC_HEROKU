@@ -13,7 +13,7 @@ from rejuvahome.libs.aws.conf import *
 DEBUG = False
 TEMPLATES[0]['OPTIONS']['debug'] = False
 
-EMAIL_HOST = 'smtp.hostinger.in'
+EMAIL_HOST = 'smtp.gmail.in'
 EMAIL_HOST_USER = environ.get('EMAIL_ID')
 EMAIL_HOST_PASSWORD = environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
