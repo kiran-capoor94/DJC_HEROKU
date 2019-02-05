@@ -88,6 +88,8 @@ TEMPLATES = [
     },
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 WSGI_APPLICATION = 'wsgi.application'
 
 
