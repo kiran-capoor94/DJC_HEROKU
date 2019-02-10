@@ -19,7 +19,7 @@ EMAIL_HOST_PASSWORD = environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Rejuva Website'
-BASE_URL = 'https://www.rejuvaaesthetica.com/'
+# BASE_URL = 'https://www.rejuvaaesthetica.com/'
 
 
 MANAGERS = (
