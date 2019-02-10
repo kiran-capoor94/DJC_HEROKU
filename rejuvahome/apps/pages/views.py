@@ -30,7 +30,7 @@ def home_page(request):
         message = '%s %s' % (content, full_name)
         emailFrom = contact_form.cleaned_data['email']
         emailTo = [settings.EMAIL_HOST_USER]
-        send_mail(subject, message, emailFrom, emailTo, fail_silently=True,)
+        send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
         confirm_message = "Thanks for the message. We will get right back to you."
 
         if request.is_ajax():
@@ -124,6 +124,7 @@ class RobotsView(TemplateView):
     template_name = 'robots.txt'
     content_type = 'text/plain'
 
+
 class SiteMapView(TemplateView):
-    template_name='sitemap.xml'
-    content_type='text/xml'
+    template_name = 'sitemap.xml'
+    content_type = 'text/xml'
