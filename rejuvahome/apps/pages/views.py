@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-from django.http import Http404, HttpResponse, JsonResponse
+from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
 from django.views.generic import TemplateView
 from django.conf import settings
 from django.core.mail import send_mail
@@ -32,7 +32,7 @@ def home_page(request):
         message = '%s %s %s %s' % (content, full_name, emailFrom, phone_number)
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
-        confirm_message = "Thanks for the message. We will get right back to you."
+        confirm_message = "Thanks for the message. We will get right back to you." # noqa
 
         if request.is_ajax():
             return JsonResponse({"message": confirm_message})
@@ -40,7 +40,7 @@ def home_page(request):
     if contact_form.errors:
         errors = contact_form.errors.as_json()
         if request.is_ajax():
-            return HttpResponse(errors, status=400, content_type='application/json')
+            return HttpResponse(errors, status=400, content_type='application/json') # noqa
     # if request.user.is_authenticated():
     #     context["premium_content"] = "YEAHHHHHH"
     return render(request, "templates/index.html", context)
@@ -65,7 +65,7 @@ def contact_page(request):
         emailFrom = contact_form.cleaned_data['email']
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
-        confirm_message = "Thanks for the message. We will get right back to you."
+        confirm_message = "Thanks for the message. We will get right back to you." # noqa
 
         if request.is_ajax():
             return JsonResponse({"message": confirm_message})
@@ -73,7 +73,7 @@ def contact_page(request):
     if contact_form.errors:
         errors = contact_form.errors.as_json()
         if request.is_ajax():
-            return HttpResponse(errors, status=400, content_type='application/json')
+            return HttpResponse(errors, status=400, content_type='application/json') # noqa
 
     return render(request, 'contact/view.html', context)
 
