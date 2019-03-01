@@ -8,11 +8,11 @@ class ContactForm(forms.Form):
     email = forms.EmailField(widget=forms.EmailInput(attrs={
         'class': 'form-control',
         'placeholder': 'Email'}))
+    phone_number = forms.IntegerField(widget=forms.NumberInput(attrs={
+        'class': 'form-control',
+        'placeholder': 'Phone Number'}))
     content = forms.CharField(widget=forms.Textarea(attrs={
         'class': 'form-control',
         'placeholder': 'Message',
         'cols': '40',
         'rows': '10'}))
-    phone_number = forms.IntegerField(widget=forms.NumberInput(attrs={
-        'class': 'form-control',
-        'placeholder': 'Phone Number'}))
