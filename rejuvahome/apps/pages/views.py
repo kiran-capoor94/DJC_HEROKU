@@ -26,9 +26,10 @@ def home_page(request):
         # Adding contact form functionality
         full_name = contact_form.cleaned_data['full_name']
         content = contact_form.cleaned_data['content']
+        phone_number = contact_form.cleaned_data['phone_number']
         subject = 'Sent from RejuvaAesthetica.com'
         emailFrom = contact_form.cleaned_data['email']
-        message = '%s %s %s' % (content, full_name, emailFrom)
+        message = '%s %s %s %s' % (content, full_name, emailFrom, phone_number)
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
         confirm_message = "Thanks for the message. We will get right back to you."
