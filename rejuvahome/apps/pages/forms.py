@@ -4,4 +4,4 @@ class ContactForm(forms.Form):
     full_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder':'Full Name'}))
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder':'Email'}))
     content = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control', 'placeholder':'Message', 'cols':'40', 'rows': '10'}))
-    phone_number = forms.IntegerField(widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Phone Number' }, min_value='10', max_value='10'))
+    phone_number = forms.IntegerField(widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Phone Number' })
