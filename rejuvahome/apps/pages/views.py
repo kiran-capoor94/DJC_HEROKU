@@ -63,7 +63,7 @@ def contact_page(request):
         phone_number = contact_form.cleaned_data['phone_number']
         subject = 'Sent from RejuvaAesthetica.com'
         emailFrom = contact_form.cleaned_data['email']
-        message = 'Message: %s  Name: %s  From:%s  PhonenMumber:%s' % (content, full_name, emailFrom, phone_number)
+        message = 'Message: %s  Name: %s  From:%s  PhoneNumber:%s' % (content, full_name, emailFrom, phone_number)
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
         confirm_message = "Thanks for the message. We will get right back to you."  # noqa
