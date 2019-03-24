@@ -32,7 +32,7 @@ def home_page(request):
         message = '%s %s %s %s' % (content, full_name, emailFrom, phone_number)
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
-        confirm_message = "Thanks for the message. We will get right back to you." # noqa
+        confirm_message = "Thanks for the message. We will get right back to you."  # noqa
 
         if request.is_ajax():
             return JsonResponse({"message": confirm_message})
@@ -40,7 +40,7 @@ def home_page(request):
     if contact_form.errors:
         errors = contact_form.errors.as_json()
         if request.is_ajax():
-            return HttpResponse(errors, status=400, content_type='application/json') # noqa
+            return HttpResponse(errors, status=400, content_type='application/json')  # noqa
     # if request.user.is_authenticated():
     #     context["premium_content"] = "YEAHHHHHH"
     return render(request, "templates/index.html", context)
@@ -60,12 +60,13 @@ def contact_page(request):
         # Adding contact form functionality
         full_name = contact_form.cleaned_data['full_name']
         content = contact_form.cleaned_data['content']
+        phone_number = contact_form.cleaned_data['phone_number']
         subject = 'Sent from RejuvaAesthetica.com'
-        message = '%s %s' % (content, full_name)
         emailFrom = contact_form.cleaned_data['email']
+        message = '%s %s %s %s' % (content, full_name, emailFrom, phone_number)
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
-        confirm_message = "Thanks for the message. We will get right back to you." # noqa
+        confirm_message = "Thanks for the message. We will get right back to you."  # noqa
 
         if request.is_ajax():
             return JsonResponse({"message": confirm_message})
@@ -73,7 +74,7 @@ def contact_page(request):
     if contact_form.errors:
         errors = contact_form.errors.as_json()
         if request.is_ajax():
-            return HttpResponse(errors, status=400, content_type='application/json') # noqa
+            return HttpResponse(errors, status=400, content_type='application/json')  # noqa
 
     return render(request, 'contact/view.html', context)
 
